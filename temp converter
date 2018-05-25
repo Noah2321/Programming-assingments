@@ -1,0 +1,17 @@
+# Programming-assingments
+like most of my programming assingments
+function cToF(celsius) {
+  // this is celsius to Fahrenheit
+  fahrenheitTemp = (celsius * (9/5)) + 32;
+  console.log(Math.round(fahrenheitTemp));
+
+}
+
+function fToC(fahrenheit) {
+  // this is Fahrenheit to Celsius
+ celsiusTemp = ((fahrenheit - 32) * 5) / 9;
+  console.log(Math.round(celsiusTemp));
+}
+
+cToF(60);
+fToC(45);
