@@ -1,0 +1,22 @@
+function countCharacter(str, char) {
+  //your code here
+  var count = 0;
+  var splitString = str.split("");
+  var splitStringArray = [];
+  var lowerCase;
+
+  for(var i=0;i<splitString.length; i++){
+    lowerCase = splitString[i].toLowerCase();
+    splitStringArray.push(lowerCase);
+  }
+
+  for(i=0;i<splitStringArray.length; i++){
+    if(splitStringArray[i] === char){
+      count++;
+    }
+  }
+  return count;
+}
+
+var output = countCharacter('I am a hacker', 'a');
+console.log(output); // --> 3
