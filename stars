@@ -1,0 +1,12 @@
+function stars(rows) {
+var results = "";
+
+	for(var  row = rows; row > 0; row--) {
+		for (var allStars = row; allStars > 0; allStars--) {
+			results += "*";			
+		}	
+		results += "\n";
+	}
+	console.log(results);
+}
+stars(10);
